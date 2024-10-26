@@ -1,0 +1,6 @@
+**/__pycache__
+cifar-100**/
+cifar-100**
+log/**
+data/**
+model_dir/**
