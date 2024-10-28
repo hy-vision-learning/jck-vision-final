@@ -61,6 +61,8 @@ def get_arg_parse():
     parser.add_argument('-e', '--epoch', type=int, help='epoch', default=100)
     parser.add_argument('-mlr', '--max_learning_rate', type=float, help='optimizer/scheduler max learning rate 설정 (custom cos scheduler는 반대)', default=0.1)
     parser.add_argument('-milr', '--min_learning_rate', type=float, help='optimizer/scheduler min learning rate 설정 (custom cos scheduler는 반대)', default=1e-4)
+    parser.add_argument('-wu', '--warmup', type=int, help='웜업 설정', default=10)
+    parser.add_argument('-ga', '--gamma', type=float, help='감마 설정', default=1.0)
     parser.add_argument('-wd', '--weight_decay', type=float, help='optimizer weight decay 설정', default=5e-4)
     parser.add_argument('-gc', '--gradient_clip', type=float, help='gradient clip 설정. -1은 비활성화', default=0.1)
     parser.add_argument('-lsm', '--label_smoothing', type=float, help='label smoothing 설정', default=0)

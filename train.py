@@ -135,7 +135,7 @@ class Trainer:
         
         if args.lr_scheduler == LRSchedulerEnum.custom_annealing:
             self.logger.debug(f'lr scheduler custom cos annealing cycle')
-            return CosineAnnealingWarmUpRestarts(self.optimizer, T_0=args.cos_max, T_mult=1, eta_max=args.min_learning_rate,  T_up=10, gamma=1)
+            return CosineAnnealingWarmUpRestarts(self.optimizer, T_0=args.cos_max, T_mult=1, eta_max=args.min_learning_rate,  T_up=args.warmup, gamma=args.gamma)
         
         if args.lr_scheduler == LRSchedulerEnum.on_plateau:
             self.logger.debug(f'lr scheduler ReduceLROnPlateau')
