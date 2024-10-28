@@ -12,6 +12,7 @@ class ModelEnum(Enum):
     
     resnext50 = 'resnext50'
     wide_resnet_16_4 = 'wide_resnet_16_4'
+    wide_resnet_16_10 = 'wide_resnet_16_10'
     wide_resnet_28_10_03 = 'wide_resnet_28_10_03'
     
     densenet121 = 'densenet121'

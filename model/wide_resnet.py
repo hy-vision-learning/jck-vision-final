@@ -81,6 +81,10 @@ class WideResNet(nn.Module):
 
 def wide_resnet_16_4(class_num):
     return WideResNet(class_num, 16, 4, 0)
+    
+
+def wide_resnet_16_10(class_num):
+    return WideResNet(class_num, 16, 10, 0)
 
 
 def wide_resnet_28_10_03(class_num):

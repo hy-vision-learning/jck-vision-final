@@ -43,6 +43,9 @@ class ModelPreProcessor:
         if m == ModelEnum.wide_resnet_16_4:
             self.logger.debug('model init: wide_resnet_16_4')
             return wide_resnet.wide_resnet_16_4(100)
+        if m == ModelEnum.wide_resnet_16_10:
+            self.logger.debug('model init: wide_resnet_16_10')
+            return wide_resnet.wide_resnet_16_10(100)
         if m == ModelEnum.wide_resnet_28_10_03:
             self.logger.debug('model init: wide_resnet_28_10_03')
             return wide_resnet.wide_resnet_28_10_03(100)
